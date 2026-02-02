@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Informasi & Bantuan 24 Jam</title>
 
+    <meta name="description" content="Pusat layanan informasi dan bantuan pelanggan 24 jam. Kami membantu menjawab pertanyaan dan memberikan panduan umum secara profesional.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'adakami-green': '#209247',
+              'adakami-light': '#D7EDC7',
+              'adakami-dark': '#1a3c34',
+              'adakami-darker': '#143026',
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      .hero-bg {
+        background-image: 
+          linear-gradient(rgba(26, 60, 52, 0.75), rgba(20, 48, 38, 0.85)), 
+          url('https://images.unsplash.com/photo-1549923746-c502d488b3ea?q=80&w=2071&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      @media (max-width: 768px) {
+        .hero-bg {
+          background-attachment: scroll;
+        }
+      }
+    </style>
+</head>
+<body class="bg-adakami-dark text-gray-100">
+
+<nav class="fixed top-0 left-0 right-0 bg-adakami-darker shadow-lg z-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex items-center gap-3">
+                <img src="https://raw.githubusercontent.com/cs-adakami/csadakamicare/main/adakamiR.png" alt="Logo AdaKami" class="h-8 md:h-10">
+                <span class="text-lg md:text-xl font-bold text-adakami-green hidden sm:inline">Pusat Informasi</span>
+            </div>
+            <div class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="#beranda" class="hover:text-adakami-light">Beranda</a>
+                <a href="#layanan" class="hover:text-adakami-light">Layanan</a>
+                <a href="#tentang" class="hover:text-adakami-light">Tentang</a>
+                <a href="#kontak" class="hover:text-adakami-light">Kontak</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section id="beranda" class="hero-bg pt-24 min-h-screen flex items-center justify-center">
+    <div class="text-center text-white max-w-3xl px-6">
+        <div class="flex justify-center mb-6">
+            <img src="https://raw.githubusercontent.com/cs-adakami/csadakamicare/main/adakamiR.png" alt="AdaKami Logo" class="h-16 md:h-20 drop-shadow-lg">
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 text-adakami-green">
+            Layanan Informasi & Bantuan 24 Jam
+        </h1>
+        <p class="text-lg md:text-xl mb-10 text-adakami-light">
+            Membantu menjawab pertanyaan, memberikan panduan umum, dan informasi layanan secara profesional & transparan.
+        </p>
+        <a href="https://wa.me/message/OTKWBXZXOWVMK1" target="_blank" rel="noopener noreferrer">
+            <button class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg transition">
+                Klik untuk terhubung via WhatsApp
+            </button>
+        </a>
+        <p class="text-xs mt-4 text-gray-300">
+                 
+        </p>
+    </div>
+</section>
+
+<section id="layanan" class="py-20 bg-adakami-dark">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-adakami-green">
+            Layanan yang Kami Sediakan
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div class="p-6 rounded-xl shadow-md border border-adakami-green/30 bg-adakami-darker hover:bg-adakami-dark transition">
+                <h3 class="font-semibold mb-2 text-adakami-light">Informasi Layanan</h3>
+                <p class="text-sm text-gray-300">
+                    Menyediakan penjelasan umum terkait layanan digital & administrasi.
+                </p>
+            </div>
+            <div class="p-6 rounded-xl shadow-md border border-adakami-green/30 bg-adakami-darker hover:bg-adakami-dark transition">
+                <h3 class="font-semibold mb-2 text-adakami-light">Bantuan Pengguna</h3>
+                <p class="text-sm text-gray-300">
+                    Membantu menjawab pertanyaan dan kendala non-teknis pengguna.
+                </p>
+            </div>
+            <div class="p-6 rounded-xl shadow-md border border-adakami-green/30 bg-adakami-darker hover:bg-adakami-dark transition">
+                <h3 class="font-semibold mb-2 text-adakami-light">Panduan Umum</h3>
+                <p class="text-sm text-gray-300">
+                    Informasi prosedural tanpa pengambilan keputusan finansial.
+                </p>
+            </div>
+            <div class="p-6 rounded-xl shadow-md border border-adakami-green/30 bg-adakami-darker hover:bg-adakami-dark transition">
+                <h3 class="font-semibold mb-2 text-adakami-light">Layanan Konsultatif</h3>
+                <p class="text-sm text-gray-300">
+                    Konsultasi bersifat informatif, bukan transaksi atau penawaran.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="tentang" class="py-20 bg-adakami-darker">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-6 text-adakami-green">Tentang Kami</h2>
+        <p class="text-gray-200 leading-relaxed">
+            Kami adalah pusat bantuan independen yang berfokus pada penyediaan informasi,
+            panduan umum, and bantuan pelanggan. Seluruh komunikasi dilakukan secara transparan
+            dan tidak mewakili institusi keuangan manapun.
+        </p>
+    </div>
+</section>
+
+<footer id="kontak" class="bg-adakami-darker text-gray-400 py-10 border-t border-adakami-green/10">
+    <div class="max-w-7xl mx-auto px-6 text-center text-sm">
+        <div class="flex justify-center mb-4">
+             <img src="https://raw.githubusercontent.com/cs-adakami/csadakamicare/main/adakamiR.png" alt="AdaKami Footer" class="h-6 opacity-70 grayscale hover:grayscale-0 transition">
+        </div>
+        <p class="mb-2">© 2026 CS Adakami24 Jam. Seluruh hak cipta dilindungi.</p>
+        <p>
+            Website ini hanya menyediakan informasi & bantuan umum.  
+            Tidak berafiliasi dengan layanan keuangan atau pinjaman.
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
