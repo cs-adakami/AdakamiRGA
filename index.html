@@ -39,6 +39,14 @@
     </script>
 
     <style>
+      /* FITUR ANTI-COPY CSS */
+      body {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
       .hero-bg {
         background-image: 
           linear-gradient(rgba(26, 60, 52, 0.75), rgba(20, 48, 38, 0.85)), 
@@ -170,6 +178,25 @@
         </p>
     </div>
 </footer>
+
+<script>
+    // Matikan Klik Kanan
+    document.addEventListener('contextmenu', e => e.preventDefault());
+
+    // Matikan Pintasan Keyboard (F12, Ctrl+U, Ctrl+C, Ctrl+S)
+    document.onkeydown = function(e) {
+        if (e.keyCode == 123) return false; // F12
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) return false; // Inspect
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) return false; // Element
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) return false; // Console
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false; // View Source
+        if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) return false; // Save Page
+        if (e.ctrlKey && e.keyCode == 'C'.charCodeAt(0)) return false; // Copy
+    };
+
+    // Matikan Drag Gambar
+    document.addEventListener('dragstart', e => e.preventDefault());
+</script>
 
 </body>
 </html>
